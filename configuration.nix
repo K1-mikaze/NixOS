@@ -9,8 +9,8 @@
 
   system = {
     desktop_environment = {
-      hyprland.enable = false;
-      gnome.enable = true;
+      hyprland.enable = true;
+      gnome.enable = false;
     };
 
     game_mode.enable = true;
