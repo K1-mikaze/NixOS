@@ -6,6 +6,7 @@
     ./profile/fan/silent.nix
     ./profile/fan/performance.nix
     ./desktop_environment/hyprland/hyprland.nix
+    ./desktop_environment/gnome/gnome.nix
     ./hardware/hardware-configuration.nix
     ./hardware/videoGraphic.nix
     ./shell/zsh.nix

@@ -8,7 +8,11 @@
   nixpkgs.config.allowUnfree = true;
 
   system = {
-    desktop_environment.hyprland.enable = true;
+    desktop_environment = {
+      hyprland.enable = false;
+      gnome.enable = true;
+    };
+
     game_mode.enable = true;
 
     shell = {
