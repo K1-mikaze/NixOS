@@ -10,7 +10,7 @@
     environment.systemPackages = with pkgs; [
       (writeShellScriptBin "full-bat" ''
         cd /sys/class/power_supply/BAT0/
-        sudo sh -c "echo 90 > charge_control_end_threshold"
+        sudo sh -c "echo 100 > charge_control_end_threshold"
         cd ~
       '')
     ];

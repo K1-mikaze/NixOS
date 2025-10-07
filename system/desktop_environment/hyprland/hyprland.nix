@@ -8,7 +8,6 @@
 
   config = lib.mkIf config.system.desktop_environment.hyprland.enable {
     environment.systemPackages = with pkgs; [
-      kitty
       hyprpaper
       wl-clipboard
       lm_sensors
@@ -18,6 +17,8 @@
       enable = true;
       xwayland.enable = true;
     };
+
+    services.power-profiles-daemon.enable = true;
 
     programs.light.enable = true; # Control over background light in screen
 

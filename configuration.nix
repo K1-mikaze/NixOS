@@ -24,12 +24,6 @@
         set60.enable = true;
         set90.enable = true;
       };
-
-      fan = {
-        silent.enable = true;
-        turbo.enable = true;
-        performance.enable = true;
-      };
     };
   };
 
@@ -43,7 +37,7 @@
     tomcat.enable = true;
     docker.enable = false;
     nginx.enable = false;
-    virt-manager.enable = false;
+    virt-manager.enable = true;
   };
 
   boot.loader = {
